@@ -21,5 +21,7 @@ public class Main {
 
         System.out.printf("Size: %d Capacity: %d \n", resizableArray.size(), resizableArray.capacity());
 
+        System.out.println(resizableArray.get(4));
+        resizableArray.get(10);
     }
 }

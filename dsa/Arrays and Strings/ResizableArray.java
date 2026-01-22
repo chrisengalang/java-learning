@@ -22,6 +22,14 @@ public class ResizableArray {
         increaseCapacity();
     }
 
+    public int get(int index) {
+        if (index > size-1) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+        
+        return this.elements[index];
+    }
+
     private void increaseCapacity() {
         if (size == capacity) {
             capacity = capacity + (capacity / 2);
